@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'; 
+import { useState, useEffect } from 'react';
+// import '../src/Countries.css'; 
 import './Countries.css'
 
 const CountryCard=({name, flagImg, flagAlt})=>{
@@ -11,14 +12,15 @@ const CountryCard=({name, flagImg, flagAlt})=>{
 }
 
 function Countries(){
-    const API_URL = "https://xcountries-backend.azurewebsites.net/all";
+    const API_URL = " https://xcountries-backend.azurewebsites.net/all";
     const [countries, setCountries] =useState([]);
-    // console.log({countries})
+    console.log({countries})
 
     useEffect(() =>{
         fetch(API_URL).then(res => res.json()).then(data =>{setCountries(data)}).catch((error) => console.error("Error fetching data:" , error.message));
     },[])
 
+    // const tempArry = [1,2,3,4,5,6,7,8,9]
     return (
         <div className='display'>
             {countries.map((country) =>( 

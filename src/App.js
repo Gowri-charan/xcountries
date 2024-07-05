@@ -1,6 +1,6 @@
-import Countries from './Countries'
+import Countries from "./Countries";
 
-function App() {
+function  App() {
   return (
     <div className="App">
       <Countries />
