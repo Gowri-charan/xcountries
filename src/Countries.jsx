@@ -19,7 +19,6 @@ function Countries(){
         fetch(API_URL).then(res => res.json()).then(data =>{setCountries(data)}).catch((error) => console.error("Error fetching data:" , error.message));
     },[])
 
-    // const tempArry = [1,2,3,4,5,6,7,8,9]
     return (
         <div className='display'>
             {countries.map((country) =>( 
