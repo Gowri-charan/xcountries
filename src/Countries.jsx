@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import style from '../src/Countries.css'; 
+import { useState, useEffect } from 'react'; 
+import './Countries.css'
 
 const CountryCard=({name, flagImg, flagAlt})=>{
     return(

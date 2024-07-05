@@ -1,10 +1,9 @@
-import './App.css';
-import Flag from "./Componants/flag/flag"
+import Countries from './Countries'
 
 function App() {
   return (
     <div className="App">
-      <Flag />
+      <Countries />
     </div>
   );
 }
