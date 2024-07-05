@@ -12,7 +12,7 @@ const CountryCard=({name, flagImg, flagAlt})=>{
 }
 
 function Countries(){
-    const API_URL = " https://xcountries-backend.azurewebsites.net/all";
+    const API_URL = "https://xcountries-backend.azurewebsites.net/all";
     const [countries, setCountries] =useState([]);
     console.log({countries})
 
