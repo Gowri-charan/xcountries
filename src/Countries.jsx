@@ -16,7 +16,7 @@ function Countries(){
     // console.log({countries})
 
     useEffect(() =>{
-        fetch(API_URL).then(res => res.json()).then(data =>{setCountries(data)}).catch((error) => console.error("Error fetching data:", error.message));
+        fetch(API_URL).then(res => res.json()).then(data =>{setCountries(data)}).catch((error) => console.error("Error fetching data:"));
     },[])
 
     // const tempArry = [1,2,3,4,5,6,7,8,9]
